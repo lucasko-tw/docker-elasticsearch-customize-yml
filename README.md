@@ -1,5 +1,5 @@
 ## Dockerfile for Elasticsearch 2.3 with customize elasticsearch.yml
-This is a example for runing elasticsearch 2.3 container and dynamic import customize elasticsearch.yml
+This is a example for runing elasticsearch 2.3 container and dynamicly importing customize elasticsearch.yml
 
 
 ### elasticsearch.yml
@@ -28,7 +28,7 @@ path.logs: /data/logs
 	docker run -p 9200:9200 -p 9300:9300 --user elsearch  -v $PWD/data:/data -v $PWD/config:/elasticsearch/config  es:1.0 /elasticsearch/bin/elasticsearch 
 ```
 
-### Check _plugin/head
+### To connect  _plugin/head
 
-	http://localhost:9200/_plugin/head/
+		http://localhost:9200/_plugin/head/
 
