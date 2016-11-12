@@ -32,7 +32,7 @@ RUN chown -R elsearch:elsearch  $ES_HOME
 VOLUME ["/data" , "/elasticsearch/config" ]
 
 # Mount elasticsearch.yml config
-ADD config/elasticsearch.yml /elasticsearch/config/elasticsearch.yml
+#ADD config/elasticsearch.yml /elasticsearch/config/elasticsearch.yml
 
 # Define working directory.
 WORKDIR /data
